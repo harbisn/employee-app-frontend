@@ -1,12 +1,15 @@
 <nav class="navbar navbar-light" style="background-color: #212121;">
   <ul class="navabar-nav">
-    <li class="nav-item">
-      <a routerLink="employees" routerLinkActive="active" class="nav-link" style="color: whitesmoke; font-weight: bold;"> Employee List </a>
+    <li class="nav-item" style="float: left;">
+      <a routerLink="employees" routerLinkActive="active" class="nav-link" style="color: whitesmoke; font-weight: bold; "> Employee List </a>
+    </li>
+    <li class="nav-item" style="float: left;">
+      <a routerLink="create-employee" routerLinkActive="active" class="nav-link" style="color: whitesmoke; font-weight: bold; "> Add Employee </a>
     </li>
   </ul>
 </nav>
 
-<h1 class="text-center">{{title}}</h1>
+<h1 class="text-center" style="color: #E4E6EB;">{{title}}</h1>
 <div class="container">
   <router-outlet></router-outlet>
 </div>
