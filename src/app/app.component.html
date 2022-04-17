@@ -1,4 +1,18 @@
+<nav class="navbar navbar-light" style="background-color: #212121;">
+  <ul class="navabar-nav">
+    <li class="nav-item">
+      <a routerLink="employees" routerLinkActive="active" class="nav-link" style="color: whitesmoke; font-weight: bold;"> Employee List </a>
+    </li>
+  </ul>
+</nav>
+
 <h1 class="text-center">{{title}}</h1>
 <div class="container">
-  <app-employee-list></app-employee-list>
+  <router-outlet></router-outlet>
 </div>
+
+<footer class="footer">
+  <div class="container">
+    <span>Employee Management App</span>
+  </div>
+</footer>
